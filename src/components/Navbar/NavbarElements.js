@@ -78,7 +78,7 @@ export const NavLinks = styled.li`
     align-items: center;
     text-decoration: none;
     padding: 0 1 rem;
-    height: 100%:
+    height: 100%;
     cursor: pointer;
 
     &.active {
