@@ -1,16 +1,24 @@
 import React from 'react'
-import { HeroContainer, HeroContent, HeroH1 } from './HeroElements';
+import { HeroContainer, HeroContent, HeroH1, HighlightedText } from './HeroElements';
+import HeroFooter from '../HeroFooter'
+import HeroNavbar from '../HeroNavbar'
 
 const HeroSection = () => {
     return (
-        <HeroContainer>
-            <HeroContent>
-                <HeroH1>
-                    Hello my name is Tim. I'm a designer, 
-                    developer and current Design Editor at The Pulse
-                </HeroH1>
-            </HeroContent>
-        </HeroContainer>
+        <>
+            <HeroNavbar />
+            <HeroContainer>
+                <HeroContent>
+                    <HeroH1>
+                        👋 Hi, I'm Tim. <br /> I
+                        <HighlightedText> design </HighlightedText> and
+                        <HighlightedText> develop </HighlightedText> elegant <br />
+                        interfaces that are easy to use.
+                    </HeroH1>
+                </HeroContent>
+            </HeroContainer>
+            <HeroFooter />
+        </>
     )
 }
 

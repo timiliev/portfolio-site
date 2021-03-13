@@ -1,24 +1,22 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-export const Nav = styled.nav`
+export const Footer = styled.footer`
     /* background: #000; */
     height: 150px;
-    /* margin-top: -80px; */
+    margin-top: -150px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    position: sticky;
-    top: 0;
-    z-index:10;
+    z-index: 10;
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
 `;
 
-export const NavbarContainer = styled.div`
+export const HeroFooterContainer = styled.div`
     display: flex;
     justify-content: space-between;
     height: 150px;
@@ -28,7 +26,7 @@ export const NavbarContainer = styled.div`
     max-width: 1500px;
 `;
 
-export const NavLogo = styled(Link)`
+export const Email = styled(Link)`
     color: #fff;
     justify-self: flex-start;
     cursor: pointer;
@@ -55,24 +53,25 @@ export const MobileIcon = styled.div`
     }
 `
 
-export const NavMenu = styled.ul`
+export const SocialIcons = styled.ul`
     display: flex;
     align-items: center;
-    list-style: none;
-    text-align: center;
+    justify-content: left;
+    padding-left: 0;
     
     @media screen and (max-width: 768px) {
         display: none;
     }
 `
 
-export const NavItem = styled.li`
-    height: 150px;
-    margin-left: 4rem;
+export const SocialItem = styled.li`
+    width: 25px;
+    height: 25px;
+    margin-right: 3rem;
     display: flex;
 `
 
-export const NavLinks = styled.li`
+export const SocialLinks = styled.li`
     color: #fff;
     display: flex;
     align-items: center;

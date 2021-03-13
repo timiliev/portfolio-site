@@ -2,15 +2,17 @@ import React from 'react'
 import { FaBars } from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from './NavbarElements';
 
-const Navbar = () => {
+const HeroNavbar = () => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'>Timotej Iliev</NavLogo>
                     <MobileIcon>
                         <FaBars />
                     </MobileIcon>
+
+                    <NavLogo to='/'>Timotej Iliev</NavLogo>
+                    
                     <NavMenu>
                         <NavItem>
                             <NavLinks>About</NavLinks>
@@ -31,4 +33,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar
+export default HeroNavbar
