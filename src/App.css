@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/gosha-sans');
+
 /* Box sizing rules */
 *,
 *::before,
@@ -76,5 +78,9 @@ select {
 /* css additional */
 body {
     background-color: #131325;
-    font-family: Jost;
+    font-family: 'Gosha Sans', -apple-system, BlinkMacSystemFont, 'Jost', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

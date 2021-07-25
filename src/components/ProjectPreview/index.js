@@ -21,9 +21,10 @@ const ProjectPreview = () => {
                             <PreviewDescription>Description</PreviewDescription>
                         </PreviewText>
                         <BtnWrap>
-                            <Button to=''></Button>
                         </BtnWrap>
                     </PreviewInfo>
+                    {/* <ImgWrap> */}
+                    {/* </ImgWrap> */}
                 </PreviewBox>
             </PreviewContainer>
         </>
