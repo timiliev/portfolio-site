@@ -6,27 +6,35 @@ import {
     PreviewText, 
     PreviewHeader, 
     PreviewDescription, 
+    CaseStudyNumber,
+    ImgWrap,
+    ProjectPreviewImg,
+    PreviewImg,
+    Projects,
+    PreviewTags,
     BtnWrap 
 } from './ProjectPreviewElements';
 
-
-const ProjectPreview = () => {
+const ProjectPreview = ({img, alt, header, description, work_for, tags, comingSoon}) => {
     return (
         <>
-            <PreviewContainer>
-                <PreviewBox>
+        {/* <Projects> */}
+            {/* <PreviewContainer> */}
+                <PreviewBox comingSoon={comingSoon}>
+                    <ImgWrap>
+                        <img src={img} alt={alt}/>
+                    </ImgWrap>
+
                     <PreviewInfo>
                         <PreviewText>
-                            <PreviewHeader>Header</PreviewHeader>
-                            <PreviewDescription>Description</PreviewDescription>
+                            <PreviewHeader>{header}</PreviewHeader>
+                            <PreviewDescription>{description} {work_for}</PreviewDescription>
+                            <PreviewTags>{tags}</PreviewTags>
                         </PreviewText>
-                        <BtnWrap>
-                        </BtnWrap>
                     </PreviewInfo>
-                    {/* <ImgWrap> */}
-                    {/* </ImgWrap> */}
                 </PreviewBox>
-            </PreviewContainer>
+            {/* </PreviewContainer> */}
+        {/* </Projects> */}
         </>
     )
 }

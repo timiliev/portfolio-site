@@ -1,10 +1,10 @@
 import React from 'react'
 // import { FaBars } from 'react-icons/fa'
 import { Footer, HeroFooterContainer, Email, SocialIcons, SocialItem, SocialLinks } from './HeroFooterElements';
-import linkedin_logo from '../../images/Linkedin logo.png';
-import dribbble_logo from '../../images/Dribbble logo.png';
-import github_logo from '../../images/Github logo.png';
-import medium_logo from '../../images/Medium logo.png';
+import linkedin_logo from '../../images/linkedin_logo_black.svg';
+import dribbble_logo from '../../images/dribbble_logo_black.svg';
+import github_logo from '../../images/github_logo_black.svg';
+import medium_logo from '../../images/medium_logo_black.svg';
 
 const HeroFooter = () => {
     return (
@@ -26,7 +26,7 @@ const HeroFooter = () => {
                         </SocialItem>
                     </SocialIcons>
 
-                    <Email to='/'>timotejiliev@findlay.edu</Email>
+                    <Email to='/'>timotejiliev@gmail.com</Email>
                 </HeroFooterContainer>
             </Footer>
         </>

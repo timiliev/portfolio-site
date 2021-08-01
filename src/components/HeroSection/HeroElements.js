@@ -1,40 +1,58 @@
 import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
-    background: #131325;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 0 30px; */
-    height: 100vh;
     position: relative;
     z-index: 0;
+
+    height: 100vh;
     /* Add before styles */
 `
 
 export const HeroContent = styled.div`
-    z-index: 3;
-    max-width: 1200px;
-    position: absolute;
+    width: 100%;
+    max-width: 1500px;
     padding: 8px 24px;
+
+    position: absolute;
+
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    z-index: 3;
+
+    /* @media screen and (max-width: 480px) {
+        width: 95%;;
+    }  */
+`
+
+export const ProfileImageWrap = styled.div`
+    width: 100px;
+    margin-bottom: 20px;
+`
+
+export const HeroSubtext = styled.h2`
+    color: #131325;
+    margin-bottom: 10px;
 `
 
 export const HeroH1 = styled.h1`
-    color: #ffffff;
-    font-size: 48px;
+    color: #9BD594;
+    font-size: 50px;
+    line-height: 60px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
 
-    @media screen and (max-width: 768px) {
+    /* @media screen and (max-width: 768px) {
         font-size: 40px;
     }
 
     @media screen and (max-width: 480px) {
-        font-size: 28px;
-    } 
+        font-size: 30px;
+    }  */
 `
 
 export const HighlightedText = styled.span`
