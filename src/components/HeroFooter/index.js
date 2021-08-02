@@ -13,20 +13,36 @@ const HeroFooter = () => {
                 <HeroFooterContainer>
                     <SocialIcons>
                         <SocialItem>
-                            <SocialLinks><img src={github_logo} alt="Github logo" /></SocialLinks>
+                            <SocialLinks>
+                                <a href="https://github.com/timiliev" target="_blank">
+                                    <img src={github_logo} alt="Github logo" />
+                                </a>
+                            </SocialLinks>
                         </SocialItem>
                         <SocialItem>
-                            <SocialLinks><img src={dribbble_logo} alt="Dribbble logo" /></SocialLinks>
+                            <SocialLinks>
+                                <a href="https://dribbble.com/Tim_iliev" target="_blank">
+                                    <img src={dribbble_logo} alt="Dribbble logo" />
+                                </a>
+                            </SocialLinks>
                         </SocialItem>
                         <SocialItem>
-                            <SocialLinks><img src={medium_logo} alt="Medium logo" /></SocialLinks>
+                            <SocialLinks>
+                                <a href="https://medium.com/@timiiliev" target="_blank">
+                                    <img src={medium_logo} alt="Medium logo" />
+                                </a>
+                            </SocialLinks>
                         </SocialItem>
                         <SocialItem>
-                            <SocialLinks><img src={linkedin_logo} alt="Linkedin logo" /></SocialLinks>
+                            <SocialLinks>
+                                <a href="https://www.linkedin.com/in/timotejiliev/" target="_blank">
+                                    <img src={linkedin_logo} alt="Linkedin logo" />
+                                </a>
+                            </SocialLinks>
                         </SocialItem>
                     </SocialIcons>
 
-                    <Email to='/'>timotejiliev@gmail.com</Email>
+                    <Email><a href = "mailto: timotejiliev@gmail.com">timotejiliev@gmail.com</a></Email>
                 </HeroFooterContainer>
             </Footer>
         </>

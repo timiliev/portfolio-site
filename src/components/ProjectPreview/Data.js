@@ -39,5 +39,5 @@ export const BrewWithTheCrewInfo = {
     work_for: "",
     tags: "Graphic Design / Concept",
     accent_color: "#fff",
-    comingSoon: false
+    comingSoon: true
 };

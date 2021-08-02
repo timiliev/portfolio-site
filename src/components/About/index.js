@@ -8,20 +8,17 @@ import {
 const About = () => {
     return (
         <>
-            <AboutMeImage></AboutMeImage>
+            <AboutMeImage id="about"></AboutMeImage>
             <ImageDescription>StartUp Weekend 2017 - Skopje, Macedonia.</ImageDescription>
             <AboutMeInfo>
-                Cras condimentum, ex imperdiet eleifend porttitor, felis nisl facilisis neque, 
-                sit amet condimentum tellus nisi a purus. Curabitur porttitor mi ac ligula semper malesuada. 
-                Curabitur laoreet luctus purus ut tincidunt. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Curabitur risus quam, fermentum at ultricies ac, porta nec libero. 
-                Nunc fringilla, nisl at eleifend feugiat, erat ex hendrerit augue, 
-                ac faucibus ante tellus sit amet dui. Vivamus euismod ultricies convallis. 
-                Proin nec nunc fringilla, vulputate risus molestie, dapibus nisl. 
-                Nunc ut dignissim neque. Maecenas maximus scelerisque metus, eu fermentum odio consectetur quis. 
-                Aenean vitae imperdiet leo. Ut a eros elit. Nam tincidunt massa enim, at dictum leo tincidunt at. 
-                Fusce a elementum orci.
+                I am a recent Univeristy of Findlay alum. I graduated with a BSc. in Computer Science
+                with an emphasis in Web and Database. <br/> <br/>
+                
+                During the last four years I have designed logos, newspaper, mobile applications, websites 
+                and have created custom artwork for various organizations based in the United States and Europe. <br/> <br/>
+                
+                Although I have an understanding of back-end development, my skills lie in front-end. 
+                I am able to convert designs into functional, responsive and scalable code. <br/> <br/>
             </AboutMeInfo>
         </>
     );

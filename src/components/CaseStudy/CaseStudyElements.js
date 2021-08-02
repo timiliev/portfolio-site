@@ -30,10 +30,20 @@ export const SectionHeader = styled.h2`
 export const QuickInfoContainer = styled.div`
     /* width: 100%; */
     display: grid;
-    grid-template-columns: minmax(100px, auto) repeat(4, auto);
-    grid-auto-flow: column;
+    grid-template-columns: repeat(4, auto);
+    /* grid-auto-flow: column; */
     margin-bottom: 40px;
     //display: block;
+
+    @media only screen and (max-width: 1180px) {
+        grid-template-columns: repeat(2, auto);
+        row-gap: 12px;
+    }
+
+    @media only screen and (max-width: 800px) {
+        grid-template-columns: repeat(1, auto);
+        row-gap: 12px;
+    }
 ` 
 
 export const ProjectQuickInfo = styled.div`
@@ -53,6 +63,10 @@ export const QuickInfoSub = styled.h3`
 export const Info = styled.h3`
     font-size: 18px;
     font-weight: 500;
+`
+export const Slim = styled.h3`
+    font-size: 18px;
+    font-weight: 300;
 `
 
 export const ImageSideInfoContainer = styled.div`
@@ -154,8 +168,6 @@ export const BackIcon = styled.div`
 `
 
 export const GoBackText = styled.h3``
-
-
 
 
 

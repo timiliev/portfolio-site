@@ -29,6 +29,10 @@ export const HeroFooterContainer = styled.div`
     /* @media screen and (max-width: 480px) {
         width: 95%;;
     }  */
+
+    @media screen and (max-width: 670px) {
+        justify-content: center;
+    }
 `;
 
 export const Email = styled(Link)`
@@ -41,6 +45,10 @@ export const Email = styled(Link)`
     /* margin-left: 24px; */
     font-weight: 600;
     text-decoration: none;
+
+    @media screen and (max-width: 670px) {
+        display: none;
+    }
 `;
 
 export const MobileIcon = styled.div`
@@ -74,6 +82,10 @@ export const SocialItem = styled.li`
     height: 25px;
     margin-right: 3rem;
     display: flex;
+
+    @media screen and (max-width: 670px) {
+        margin: 0 20px;
+    }
 `
 
 export const SocialLinks = styled.li`

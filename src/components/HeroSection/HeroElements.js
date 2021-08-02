@@ -40,19 +40,33 @@ export const HeroSubtext = styled.h2`
 `
 
 export const HeroH1 = styled.h1`
-    color: #9BD594;
+    /* color: #9BD594;
     font-size: 50px;
     line-height: 60px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 600; */
 
-    /* @media screen and (max-width: 768px) {
-        font-size: 40px;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    line-height: 3rem;
+    text-align: center;
+
+    color: #9BD594;
+
+    @media screen and (max-width: 768px) {
+        font-size: 35px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 35px;
+        line-height: 2.5rem;
     }
 
     @media screen and (max-width: 480px) {
         font-size: 30px;
-    }  */
+        line-height: 2rem;
+    } 
 `
 
 export const HighlightedText = styled.span`

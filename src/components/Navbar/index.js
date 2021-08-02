@@ -12,6 +12,7 @@ import {
 } from './NavbarElements';
 
 import home_icon from "../../images/home_icon.svg";
+import signature from "../../images/signature-black.png"
 
 const Navbar = ({ toggle }) => {
     return (
@@ -19,23 +20,23 @@ const Navbar = ({ toggle }) => {
             <Nav>
                 <NavbarContainer>
                     <MobileIcon onClick={toggle}>
-                        <FaBars />
+                        <FaBars style={{ fill: 'black' }}/>
                     </MobileIcon>
 
-                    <NavLogo to='/'><NavLogoWrap><img src={home_icon} alt="Home Icon"/></NavLogoWrap></NavLogo>
+                    <NavLogo to='/'><NavLogoWrap><img src={signature} class="signature-small" alt="Home Icon"/></NavLogoWrap></NavLogo>
                     
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='about'>About me</NavLinks>
+                            <NavLinks to='about' smooth={true} duration={500} spy={true} offset={-200}>About me</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='work'>Projects</NavLinks>
+                            <NavLinks to='projects' smooth={true} duration={500} spy={true} offset={-170}>Projects</NavLinks>
                         </NavItem>
-                        <NavItem>
+                        {/* <NavItem>
                             <NavLinks to='resume'>Resume</NavLinks>
-                        </NavItem>
+                        </NavItem> */}
                         <NavItem>
-                            <NavLinks to='contact'>Contact</NavLinks>
+                            <NavLinks to='footer' smooth={true} duration={500} spy={true}>Contact</NavLinks>
                         </NavItem>
                     </NavMenu>
                 </NavbarContainer>

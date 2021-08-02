@@ -86,7 +86,7 @@ body {
     background-color: white;
     margin: 0 auto;
     /* margin: 0 15%; */
-    font-family: 'Basis Grotesque Pro', 'Jost', 'Mabry Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: 'Cerebri Sans Pro', 'Basis Grotesque Pro', 'Jost', 'Mabry Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -108,6 +108,13 @@ body {
   column-count: 2;
   column-gap: 60px;
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .preview_container {
+    column-count: 1;
+    grid-column-gap: 0;
+  }
 }
 
 .section_header {
@@ -157,4 +164,14 @@ body {
   body {
       margin: 0 5%;
   }
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.signature-small {
+  max-height: 40px;
+  width: auto;
 }

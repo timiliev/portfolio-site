@@ -18,7 +18,7 @@ import {
 const ProjectPreview = ({img, alt, header, description, work_for, tags, comingSoon}) => {
     return (
         <>
-        {/* <Projects> */}
+        <Projects id="projects">
             {/* <PreviewContainer> */}
                 <PreviewBox comingSoon={comingSoon}>
                     <ImgWrap>
@@ -34,7 +34,7 @@ const ProjectPreview = ({img, alt, header, description, work_for, tags, comingSo
                     </PreviewInfo>
                 </PreviewBox>
             {/* </PreviewContainer> */}
-        {/* </Projects> */}
+        </Projects>
         </>
     )
 }

@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Router } from 'react-router-dom';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import HeroSection from '../components/HeroSection';
 import ProjectPreview from '../components/ProjectPreview';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import About from "../components/About";
 import Footer from "../components/Footer"
-import ThePulseCaseStudy from "../components/ThePulseCaseStudy"
 
 import { 
     ThePulseInfo, 
@@ -14,6 +13,7 @@ import {
     WoodCountyInfo,
     BrewWithTheCrewInfo
 } from "../components/ProjectPreview/Data";
+import { Info, Slim } from "../components/CaseStudy/CaseStudyElements";
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,28 +27,42 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
 
-            {/* <ThePulseCaseStudy/> */}
-
             <HeroSection />
             
             <h2 class="section_header">My projects</h2>
             <h3 class="section_subheader">A collection of selected work</h3>
             <div class="projects">
                 <div class="preview_container">
-                    <a href=""><ProjectPreview {...ThePulseInfo}/></a>
-                    <a href=""><ProjectPreview {...RavensInfo}/></a>
-                    <a href=""><ProjectPreview {...WoodCountyInfo}/></a>
-                    <a href=""><ProjectPreview {...BrewWithTheCrewInfo}/></a>
+                    <a href="/the-pulse-case-study"><ProjectPreview {...ThePulseInfo}/></a>
+                    <ProjectPreview {...RavensInfo}/>
+                    <ProjectPreview {...WoodCountyInfo}/>
+                    <ProjectPreview {...BrewWithTheCrewInfo}/>
                 </div>
             </div>
 
             <h2 class="section_header">About me</h2>
             <h3 class="section_subheader">
-                This is a short bio about who I am. A somewhat long-ish cool sentence that tells you I am an awesome designer
+                A short bio
             </h3>
             <About />
 
-            <Footer />
+            <h2 class="section_header">Skills</h2>
+            <Info>
+                Engineering 
+                <Slim> 
+                    Expertise in HTML, CSS, JavaScript, WordPress, C++. <br/>
+                    Proficient with ReactJS, jQuery, PHP, SCSS, Bootstrap, Python, Django, Java. <br/>
+                    Familiar with ES6, SQL, Git. <br/><br/>
+                </Slim>
+                Design 
+                <Slim>
+                    Expertise in Adobe Photoshop, Illustrator, XD, InDesign, After Effects, 
+                    Interaction Design, User Research, Usability Testing. <br/>
+                    
+                    Proficient with Figma, InVision.
+                </Slim>
+            </Info>
+            
         </>
     )
 }

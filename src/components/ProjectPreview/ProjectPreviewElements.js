@@ -2,17 +2,16 @@ import styled from 'styled-components'
 import the_pulse_preview from '../../images/The Pulse Newspaper Preview.png';
 
 export const Projects = styled.div`
-    width: 100%;
+    /* width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 `
 
 export const PreviewContainer = styled.div`
     column-count: 2;
     column-gap: 60px;
-
-    display: block;
+    /* display: block; */
 `
 
 export const PreviewBox = styled.div`

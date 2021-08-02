@@ -9,6 +9,14 @@ export const AboutMeImage = styled.div`
     width: 100%;
     height: 300px;
     border-radius: 20px;
+
+    @media screen and (max-width: 800px) {
+        background-position: center -10px;
+    }
+
+    @media screen and (max-width: 530x) {
+        background-position: center 50px;
+    }
 `
 
 export const ImageDescription = styled.p`

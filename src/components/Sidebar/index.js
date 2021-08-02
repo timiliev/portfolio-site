@@ -23,24 +23,41 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about" onClick={toggle}>
+                    <SidebarLink to='about' smooth={true} duration={500} spy={true} offset={-300} onClick={toggle}>
                         About
                     </SidebarLink>
-                    <SidebarLink to="work" onClick={toggle}>
+                    <SidebarLink to='projects' smooth={true} duration={500} spy={true} offset={-200} onClick={toggle}>
                         Work
                     </SidebarLink>
-                    <SidebarLink to="resume" onClick={toggle}>
+                    {/* <SidebarLink to="resume" onClick={toggle}>
                         Resume
-                    </SidebarLink>
-                    <SidebarLink to="contact" onClick={toggle}>
+                    </SidebarLink> */}
+                    <SidebarLink to='footer' smooth={true} duration={500} spy={true} onClick={toggle}>
                         Contact
                     </SidebarLink>
                 </SidebarMenu>
+                
                 <SideSocialIconsWrap>
-                    <SocialLinks><img src={github_logo} alt="Github logo" /></SocialLinks>
-                    <SocialLinks><img src={dribbble_logo} alt="Dribbble logo" /></SocialLinks>
-                    <SocialLinks><img src={medium_logo} alt="Medium logo" /></SocialLinks>
-                    <SocialLinks><img src={linkedin_logo} alt="Linkedin logo" /></SocialLinks>
+                    <SocialLinks>
+                        <a href="https://github.com/timiliev" target="_blank">
+                            <img src={github_logo} alt="Github logo" />
+                        </a>
+                    </SocialLinks>
+                    <SocialLinks>
+                        <a href="https://dribbble.com/Tim_iliev" target="_blank">
+                            <img src={dribbble_logo} alt="Dribbble logo" />
+                        </a>
+                    </SocialLinks>
+                    <SocialLinks>
+                        <a href="https://medium.com/@timiiliev" target="_blank">
+                            <img src={medium_logo} alt="Medium logo" />
+                        </a>
+                    </SocialLinks>                            
+                    <SocialLinks>
+                        <a href="https://www.linkedin.com/in/timotejiliev/" target="_blank">
+                            <img src={linkedin_logo} alt="Linkedin logo" />
+                        </a>
+                    </SocialLinks>
                 </SideSocialIconsWrap>
             </SidebarWrapper>
         </SidebarContainer>

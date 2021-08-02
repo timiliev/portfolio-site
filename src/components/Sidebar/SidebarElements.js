@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { FaTimes } from 'react-icons/fa';
-import { Link as LinkScroll } from 'react-router-dom';
+import { Link as LinkScroll } from 'react-scroll';
 
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #131325;
+    background: white;
     display: grid;
     align-items: center;
     top: 0;
@@ -54,7 +54,7 @@ export const SidebarLink = styled(LinkScroll)`
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;
-    color: #fff;
+    color: #3A3A3A;
     cursor: pointer;
     
     &:hover {
